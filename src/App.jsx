@@ -1,14 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-        <section id="spacer"></section>
-    </>
-  )
+  return
+    <div className="min-h-screen overflow-x-hidden">
+      <Navbar />
+      <main></main>
+    </div>
 }
 
 export default App
