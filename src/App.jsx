@@ -5,7 +5,7 @@ import { Projects } from "./sections/Projects";
 import { Navbar } from "./layout/Navbar";
 
 function App() {
-  return
+  return (
     <div className="min-h-screen overflow-hidden">
       <Navbar />
       <main>
@@ -15,6 +15,7 @@ function App() {
         <Projects />
       </main>
     </div>
+  )
 }
 
 export default App
