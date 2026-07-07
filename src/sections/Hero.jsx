@@ -73,8 +73,8 @@ export const Hero = () => {
                                 </div>
                             </div>
                             <div className="absolute -top-4 -left-4 glass rounded-xl px-4 y-4 animate-float animation-delay-400">
-                                <div className="text-2xl font-bold text-primary">Lorem</div>
-                                <div className="text-xs text-muted-foreground">Ipsum</div>
+                                <div className="text-2xl font-bold text-primary">3+ years</div>
+                                <div className="text-xs text-muted-foreground">Experience</div>
                             </div>
                         </div>
                     </div>
