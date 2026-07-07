@@ -65,7 +65,7 @@ export const Hero = () => {
                     <div className="relative max-w-md mx-auto">
                         <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
                         <div className="relative glass rounded-3xl p-2 glow-border">
-                            <img src="/hero.png" alt="Colby Patterson" className="w-full aspect-4/5 object-cover rounded-2xl"/>
+                            <img src="/profile.jpg" alt="Colby Patterson" className="w-full aspect-4/5 object-cover rounded-2xl"/>
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className="flex items-center gap-3">
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
