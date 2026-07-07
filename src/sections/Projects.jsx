@@ -8,6 +8,14 @@ const projects = [
         tags: ["HTML, CSS, Amazon S3, Lambda, DynamoDB"],
         link: "#",
         github: "#",
+    },
+    {
+        title: "More Projects Coming Soon",
+        description: "Coming Soon",
+        image: "/hero.png",
+        tags: ["Coming Soon"],
+        link: "#",
+        github: "#",
     }
 ]
 

@@ -30,7 +30,7 @@ export const About = () => {
 
                     <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            I have 3+ years experience working in IT Support, solving complex issues. I have a Bachelor's Degree in Cloud Computing that includes working knowledge of AWS and Azure. I also have a Web Development certificate from which I learned how to code in React. Additionally, I have several IT and Cloud certifications, including CompTIA Network+, Security+, AWS Certified Solutions Architect - Associate, and Azure Administrator Associate.
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

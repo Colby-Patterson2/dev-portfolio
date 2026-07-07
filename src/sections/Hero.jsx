@@ -53,7 +53,7 @@ export const Hero = () => {
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200+-
                         ">
-                            Welcome! My name is Colby Patterson. I have 3+ years experience working in IT Support, solving complex issues. I have a Bachelor's Degree in Cloud Computing that includes working knowledge of AWS and Azure. I also have a Web Development certificate from which I learned how to code in React. Additionally, I have several IT and Cloud certifications, including CompTIA Network+, Security+, AWS Certified Solutions Architect - Associate, and Azure Administrator Associate.
+                            Welcome! My name is Colby Patterson. Please feel free to browse my portfolio.
                         </p>
                     </div>
 
@@ -69,13 +69,13 @@ export const Hero = () => {
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className="flex items-center gap-3">
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                                    <span className="text-sm font-medium">Colby Patterson</span>
+                                    <span className="text-sm font-medium">Bachelor Of Science - Cloud Computing</span>
                                 </div>
                             </div>
-                            <div className="absolute -top-4 -left-4 glass rounded-xl px-4 y-4 animate-float animation-delay-400">
+                            {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 y-4 animate-float animation-delay-400">
                                 <div className="text-2xl font-bold text-primary">3+ years</div>
                                 <div className="text-xs text-muted-foreground">Experience</div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
