@@ -43,17 +43,17 @@ export const Hero = () => {
 
                     <div className="space-y-4">
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                            Lorem <span className="text-primary glow-text">Ipsum</span>
+                            Colby <span className="text-primary glow-text">Patterson's</span>
                             <br />
-                            Dolor
+                            Cloud
                             <br />
                             <span className="font-serif italic font-normal text-white">
-                                Sit Amet
+                                Portfolio
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200+-
                         ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Welcome! My name is Colby Patterson. I have 3+ years experience working in IT Support, solving complex issues. I have a Bachelor's Degree in Cloud Computing that includes working knowledge of AWS and Azure. I also have a Web Development certificate from which I learned how to code in React. Additionally, I have several IT and Cloud certifications, including CompTIA Network+, Security+, AWS Certified Solutions Architect - Associate, and Azure Administrator Associate.
                         </p>
                     </div>
 
