@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "../components/Button";
 
 const skills = [
@@ -86,12 +86,18 @@ export const Hero = () => {
                     <div className="flex animate-marquee">
                         {[...skills, ...skills].map((skill, idx) => (
                             <div key={idx} className="shrink-0 px-8 py-4">
-                                <span>{skill}</span>
+                                <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-600">
+            <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
+                <span className="text-xs uppercase tracking-wider">Scroll</span>
+                <ChevronDown className="w-6 h-6 animate-bounce" />
+            </a>
         </div>
     </section>;
 }
