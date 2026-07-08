@@ -24,8 +24,8 @@ export const About = () => {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-                        Lorem ipsum,
-                        <span className="font-serif italic font-normal text-white"> lorem ipsum</span>
+                        Aspiring Cloud
+                        <span className="font-serif italic font-normal text-white"> And Devops Engineer</span>
                     </h2>
 
                     <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
@@ -33,18 +33,15 @@ export const About = () => {
                             I have 3+ years experience working in IT Support, solving complex issues. I have a Bachelor's Degree in Cloud Computing that includes working knowledge of AWS and Azure. I also have a Web Development certificate from which I learned how to code in React. Additionally, I have several IT and Cloud certifications, including CompTIA Network+, Security+, AWS Certified Solutions Architect - Associate, and Azure Administrator Associate.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            I have always been interested in computing and have become interested in cloud computing in the past several years. I have spent the last couple years learning as much as I can about networking concepts and cloud services. I have mostly focused on AWS and Azure, but I am learning about Google Cloud Platform as well.
                         </p>
                     </div>
 
-                    <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
+                    {/* <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                         <p className="text-lg font-medium italic text-foreground">
                             Mission Statement Goes Here
                         </p>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
