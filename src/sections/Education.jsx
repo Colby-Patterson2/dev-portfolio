@@ -1,3 +1,3 @@
-export const Education = () => {
+export const Contact = () => {
     return <section></section>;
 }
