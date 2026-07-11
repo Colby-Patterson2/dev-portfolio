@@ -4,7 +4,7 @@ const highlights = [
     {
         icon: CloudCheck,
         title: "Cloud Certifications",
-        description: "Multipe Cloud Certifications",
+        description: "Multiple Cloud Certifications",
     },
     {
         icon: CodeXml,
