@@ -1,15 +1,25 @@
-import { CloudCheck, CodeXml } from "lucide-react";
+import { CloudCheck, CodeXml, DraftingCompass, ThumbsUp } from "lucide-react";
 
 const highlights = [
     {
         icon: CloudCheck,
         title: "Cloud Certifications",
-        description: "Multiple Cloud Certifications",
+        description: "Multiple Cloud Certifications, including AWS Solutions Architect-Associate",
     },
     {
         icon: CodeXml,
         title: "Coding Experience",
-        description: "Experience with several coding languages",
+        description: "Experience with several coding languages, including Javascript and Python",
+    },
+    {
+        icon: ThumbsUp,
+        title: "Team Focused",
+        description: "Always interested in working on a team toward a common goal",
+    },
+    {
+        icon: DraftingCompass,
+        title: "Problem Solving",
+        description: "Dedicated to finding innovative solutions to difficult problems",
     },
 ]
 
