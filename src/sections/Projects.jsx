@@ -4,9 +4,17 @@ const projects = [
     {
         title: "Visitor Counter",
         description: "A website that counts visitors, hosted on AWS",
-        image: "/hero.png",
+        image: "/visitor_count_project.png",
         tags: ["HTML, CSS, Amazon S3, Lambda, DynamoDB"],
         link: "https://d1zlz8g2xqsk7t.cloudfront.net/",
+        github: "#",
+    },
+    {
+        title: "eCommerce Project",
+        description: "Full Stack eCommerce Website",
+        image: "/hero.png",
+        tags: ["Coming Soon"],
+        link: "#",
         github: "#",
     },
     {
@@ -14,7 +22,7 @@ const projects = [
         description: "Coming Soon",
         image: "/hero.png",
         tags: ["Coming Soon"],
-        link: "https://d1zlz8g2xqsk7t.cloudfront.net/",
+        link: "#",
         github: "#",
     }
 ]
