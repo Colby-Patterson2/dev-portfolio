@@ -11,7 +11,8 @@ const skills = [
     "Networking",
     "JavaScript",
     "React",
-    "Python"
+    "Python",
+    "NodeJS"
 ]
 
 export const Hero = () => {
