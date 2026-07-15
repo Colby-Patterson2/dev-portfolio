@@ -84,8 +84,8 @@ export const Hero = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="=mt-20 animate-fade-in animation-delay-500">
-                <p className="text-sm text-muted-foreground mb-6 text-center">Skills and Certifications</p>
+            <div className="mt-20 animate-fade-in animation-delay-500">
+                {/* <p className="text-sm text-muted-foreground mb-6 text-center">Skills and Certifications</p>
                 <div className="relative overflow-hidden">
                     <div className="flex animate-marquee">
                         {[...skills, ...skills].map((skill, idx) => (
@@ -94,8 +94,8 @@ export const Hero = () => {
                             </div>
                         ))}
                     </div>
-                </div>
-            </div> */}
+                </div> */}
+            </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-600">
             <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
