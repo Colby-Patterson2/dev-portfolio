@@ -7,6 +7,7 @@ import { Navbar } from "./layout/Navbar";
 function App() {
   return (
     <div className="min-h-screen overflow-hidden">
+      <title>CP Portfolio</title>
       <Navbar />
       <main>
         <Hero />
