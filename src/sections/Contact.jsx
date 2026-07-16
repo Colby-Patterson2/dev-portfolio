@@ -1,4 +1,51 @@
+import { Send } from "lucide-react"
+import { Button } from "../components/Button"
+import { useState } from "react"
+import emailjs from "@emailjs/browser"
+
 export const Contact = () => {
+    const [formData, setFormData] = useState({
+        name:"",
+        email:"",
+        message:""
+    });
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState({
+        type: null,
+        message: "",
+    })
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        setIsLoading(true);
+        setSubmitStatus({ type: null, message: ""});
+
+        try {
+            const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+            const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+            if (!serviceId || !templateId || !publicKey) {
+                throw new Error(
+                "EmailJS configuration missing"
+            );
+        }
+            await emailjs.send(serviceId, templateId, {name: formData.name, email: formData.email, message: formData.message}, publicKey);
+
+            setSubmitStatus({
+                type: "Success",
+                message: "Message sent successfully"
+            });
+            setFormData({ name: "", email: "", message: "" });
+        } catch (err){
+            console.log(err);
+        } finally {
+            setIsLoading(false);
+        }
+    }
+
     return (
         <section id="contact" className="py-32 overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full">
@@ -18,21 +65,25 @@ export const Contact = () => {
 
                 <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
                     <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                                <input id="name" type="text" required placeholder="Your Name" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"/>
+                                <input id="name" type="text" required placeholder="Your Name" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })}/>
                             </div>
 
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                                <input id="email" type="email" required placeholder="Your Email" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"/>
+                                <input id="email" type="email" required placeholder="Your Email" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })}/>
                             </div>
 
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                                <textarea rows={5} required placeholder="Your Message" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" />
+                                <textarea rows={5} required placeholder="Your Message" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}/>
                             </div>
+                            <Button className="w-full" type="submit" size="lg" disabled={isLoading}>
+                                Send Message
+                                <Send />
+                            </Button>
                         </form>
                     </div>
                 </div>
