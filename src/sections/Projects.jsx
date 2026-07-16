@@ -6,7 +6,7 @@ const projects = [
         description: "A website that counts visitors, hosted on AWS",
         image: "/visitor_count_project.png",
         tags: ["HTML, CSS, Amazon S3, Lambda, DynamoDB"],
-        link: "https://d1zlz8g2xqsk7t.cloudfront.net/",
+        link: "https://dhznztclhi5hz.cloudfront.net/",
         github: "#",
     },
     {
