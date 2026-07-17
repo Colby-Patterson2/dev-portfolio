@@ -1,4 +1,4 @@
-import { Send } from "lucide-react"
+import { Send, AlertCircle, CheckCircle } from "lucide-react"
 import { Button } from "../components/Button"
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
@@ -58,7 +58,7 @@ export const Contact = () => {
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
                         Get In Touch
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-200 text-secondary-foreground">
+                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-200 text-primary-foreground">
                         Contact Me
                     </h2>
                 </div>
@@ -81,9 +81,18 @@ export const Contact = () => {
                                 <textarea rows={5} required placeholder="Your Message" className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}/>
                             </div>
                             <Button className="w-full" type="submit" size="lg" disabled={isLoading}>
-                                Send Message
-                                <Send />
+                                {isLoading ? ( <>Sending...</> ) : (
+                                <>
+                                    Send Message
+                                    <Send className="w-5 h-5" />
+                                </>
+                                 )}
                             </Button>
+
+                            <div>
+                                <p className="text-sm">{submitStatus.message}</p>
+                            </div>
+
                         </form>
                     </div>
                 </div>
