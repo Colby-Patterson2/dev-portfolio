@@ -62,7 +62,8 @@ export const Hero = () => {
                     </div>
 
                     <div>
-                        <Button size="lg">Contact Me<ArrowRight className="w-5 h-5"/></Button>
+                        {/* <Button size="lg">Contact Me<ArrowRight className="w-5 h-5"/></Button> */}
+                        <a href="#contact" className="w-5 h-5 px-8 py-4 text-lg relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25">Contact Me</a>
                     </div>
                 </div>
                 <div className="relative animate-fade-in animation-delay-300">
