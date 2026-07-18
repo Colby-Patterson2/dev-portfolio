@@ -51,7 +51,7 @@ export const Navbar = () => {
 
         <div className="hidden md:block">
           {/* <Button size="sm">Contact Me</Button> */}
-          <a href="#contact" className="w-5 h-5 px-8 py-4 text-lg relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25">Contact Me</a>
+          {/* <a href="#contact" className="w-5 h-5 px-8 py-4 text-lg relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25">Contact Me</a> */}
         </div>
 
         <button
