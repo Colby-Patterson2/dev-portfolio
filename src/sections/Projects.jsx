@@ -42,21 +42,38 @@ export const Projects = () => {
                         <div key={idx} className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1" style={{animationDelay: `${(idx + 1) * 100}ms`}}>
                             <div className="relative overflow-hidden aspect-video">
                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
-                               <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
-                               <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <a href={project.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all" target="_blank" rel="noopener noreferrer">
-                                        <ArrowUpRight className="w-5 h-5"/>
+                               <div className="absolute inset-0 bg-linear-to-t from-card via-card/45 to-transparent opacity-70" />
+
+                               <div className="absolute inset-x-3 bottom-3 md:inset-x-auto md:bottom-4 md:right-4 flex items-center justify-between md:justify-end gap-2 rounded-2xl border border-white/10 bg-background/55 p-2 backdrop-blur-md opacity-100 translate-y-0 md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300">
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 min-h-11 px-3 rounded-xl bg-primary text-primary-foreground hover:brightness-110 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 transition-all"
+                                        aria-label={`Open live project: ${project.title}`}
+                                    >
+                                        <ArrowUpRight className="w-4 h-4"/>
+                                        <span className="text-xs font-medium md:hidden">Live</span>
                                     </a>
-                                    {/* <a>
-                                        <GitBranchIcon />
-                                    </a> */}
+
+                                    {project.github !== "#" && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 min-h-11 px-3 rounded-xl glass hover:bg-surface/80 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 transition-all"
+                                            aria-label={`Open source code: ${project.title}`}
+                                        >
+                                            <GitBranchIcon className="w-4 h-4"/>
+                                            <span className="text-xs font-medium md:hidden">Code</span>
+                                        </a>
+                                    )}
                                </div>
                             </div>
 
                             <div className="p-6 space-y-4">
-                                <div className="flex items-start justify-between">
+                                <div className="flex items-start">
                                     <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{project.title}</h3>
-                                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"/>
                                 </div>
                                 <p className="text-muted-foreground text-sm">{project.description}</p>
                                 <div className="flex flex-wrap gap-2">{project.tags.map((tag, tagIdx) => (
