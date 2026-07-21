@@ -14,7 +14,7 @@ const projects = [
         description: "Full Stack eCommerce Website",
         image: "/demo-ecommerce-project.png",
         tags: ["Coming Soon"],
-        link: "https://main.d2thqtzrpf0jqh.amplifyapp.com/",
+        link: "https://main.d1ej2ddlmi7wbb.amplifyapp.com/",
         github: "#",
     },
     {
@@ -50,7 +50,7 @@ export const Projects = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-2 min-h-11 px-3 rounded-xl bg-primary text-primary-foreground hover:brightness-110 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/70 transition-all"
-                                        aria-label={`Open link toproject: ${project.title}`}
+                                        aria-label={`Open link to project: ${project.title}`}
                                     >
                                         <ArrowUpRight className="w-4 h-4"/>
                                         <span className="text-xs font-medium md:hidden">Link</span>
