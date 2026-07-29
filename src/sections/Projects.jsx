@@ -20,9 +20,9 @@ const projects = [
     {
         title: "Event Reservations App",
         description: "Hosted on Microsoft Azure",
-        image: "/demo-ecommerce-project.png",
+        image: "/event-reservation-demo.png",
         tags: ["Microsoft Azure, Docker, CosmosDB"],
-        link: "https://aca-events-web.yellowwater-f6c7d26d.westus3.azurecontainerapps.io",
+        link: "https://ca-events-app-2.ashyflower-70857008.westus3.azurecontainerapps.io",
         github: "#",
     },
     {
