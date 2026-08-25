@@ -18,7 +18,7 @@ const skills = [
 export const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-            <img src="/hero.png" alt="Hero image" className="w-full h-full object-cover opacity-40"/>
+            <img src="/hero.png" alt="Profile" className="w-full h-full object-cover opacity-40"/>
             <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"/>
         </div>
 
@@ -62,7 +62,6 @@ export const Hero = () => {
                     </div>
 
                     <div>
-                        {/* <Button size="lg">Contact Me<ArrowRight className="w-5 h-5"/></Button> */}
                         <a href="#contact" className="w-5 h-5 px-8 py-4 text-lg relative overflow-hidden rounded-full font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25">Contact Me</a>
                     </div>
                 </div>
@@ -77,10 +76,6 @@ export const Hero = () => {
                                     <span className="text-sm font-medium">Bachelor Of Science - Cloud Computing</span>
                                 </div>
                             </div>
-                            {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 y-4 animate-float animation-delay-400">
-                                <div className="text-2xl font-bold text-primary">3+ years</div>
-                                <div className="text-xs text-muted-foreground">Experience</div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
