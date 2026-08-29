@@ -13,7 +13,7 @@ const projects = [
         title: "eCommerce Project",
         description: "Full Stack eCommerce Website",
         image: "/demo-ecommerce-project.png",
-        tags: ["Coming Soon"],
+        tags: ["React, Lambda, DynamoDB, S3"],
         link: "https://main.d1ej2ddlmi7wbb.amplifyapp.com/",
         github: "#",
     },
