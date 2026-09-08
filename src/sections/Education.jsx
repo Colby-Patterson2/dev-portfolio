@@ -5,13 +5,13 @@ const education = [
         icon: GraduationCap,
         title: "Bachelor of Science",
         field: "Cloud Computing",
-        description: "WGU",
+        description: "WGU | 2026",
     },
     {
         icon: Award,
         title: "Web Development Certificate",
         field: "Web Development",
-        description: "BYU-Idaho",
+        description: "BYU-Idaho | 2022",
     },
 ];
 
@@ -35,7 +35,7 @@ export const Education = () => {
                     {education.map((item, idx) => (
                         <article
                             key={item.title}
-                            className="glass p-8 rounded-2xl animate-fade-in"
+                            className="glass p-8 rounded-2xl animate-fade-in flex flex-col h-full"
                             style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                         >
                             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
@@ -45,7 +45,7 @@ export const Education = () => {
                                 {item.field}
                             </p>
                             <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                            <p className="text-muted-foreground">{item.description}</p>
+                            <p className="text-muted-foreground mt-auto">{item.description}</p>
                         </article>
                     ))}
                 </div>
