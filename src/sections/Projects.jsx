@@ -11,10 +11,10 @@ const projects = [
     },
     {
         title: "eCommerce Project",
-        description: "Full Stack eCommerce Website, Coming Soon",
+        description: "Full Stack eCommerce Website",
         image: "/demo-ecommerce-project.png",
         tags: ["React", "Lambda", "DynamoDB", "S3"],
-        link: "#",
+        link: "https://main.d3dy3qmvlc4tnh.amplifyapp.com/",
         github: "#",
     },
     {
