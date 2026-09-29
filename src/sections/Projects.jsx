@@ -26,6 +26,14 @@ const projects = [
         github: "#",
     },
     {
+        title: "Calculator App",
+        description: "Calculator App built with React",
+        image: "/hero.png",
+        tags: ["React", "TypeScript"],
+        link: "https://main.d3iwi7k1ziuvb8.amplifyapp.com/",
+        github: "#",
+    },
+    {
         title: "More Projects Coming Soon",
         description: "Coming Soon",
         image: "/hero.png",
@@ -52,7 +60,7 @@ export const Projects = () => {
                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
                                <div className="absolute inset-0 bg-linear-to-t from-card via-card/45 to-transparent opacity-70" />
 
-                               <div className="absolute bottom-3 right-3 left-auto w-fit flex items-center justify-end gap-2 md:bottom-4 md:right-4 md:rounded-2xl md:border md:border-white/10 md:bg-background/55 md:p-2 md:backdrop-blur-md opacity-100 translate-y-0 md:opacity-0 md:translate-y-2 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-300">
+                               <div className="absolute bottom-3 right-3 left-auto w-fit flex items-center justify-end gap-2 md:bottom-4 md:right-4 md:rounded-2xl md:border md:border-white/10 md:bg-background/55 md:p-2 md:backdrop-blur-md">
                                     <a
                                         href={project.link}
                                         target="_blank"
@@ -61,7 +69,7 @@ export const Projects = () => {
                                         aria-label={`Open link to project: ${project.title}`}
                                     >
                                         <ArrowUpRight className="w-4 h-4"/>
-                                        <span className="text-xs font-medium md:hidden">Link</span>
+                                        <span className="text-xs font-medium">Link</span>
                                     </a>
 
                                     {project.github !== "#" && (
