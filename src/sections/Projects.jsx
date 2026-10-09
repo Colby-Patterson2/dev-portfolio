@@ -12,7 +12,7 @@ const projects = [
     {
         title: "eCommerce Project",
         description: "Full Stack eCommerce Website",
-        image: "/demo-ecommerce-project.png",
+        image: "/demo-ecommerce-project-updated.png",
         tags: ["React", "Lambda", "DynamoDB", "S3"],
         link: "https://main.d3dy3qmvlc4tnh.amplifyapp.com/",
         github: "#",
@@ -28,7 +28,7 @@ const projects = [
     {
         title: "Calculator App",
         description: "Calculator App built with React",
-        image: "/hero.png",
+        image: "/calculator-project.png",
         tags: ["React", "TypeScript"],
         link: "https://main.d3iwi7k1ziuvb8.amplifyapp.com/",
         github: "#",
